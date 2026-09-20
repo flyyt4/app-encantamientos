@@ -1,0 +1,109 @@
+/* Sobre escritura de los estilos por defecto */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/* Variables */
+
+:root {
+    --background: rgb(198, 198, 198);
+    --foreground: rgb(0, 0, 0);
+    --muted: rgb(139, 139, 139);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: rgb(79, 79, 79);
+        --foreground: rgb(255, 255, 255);
+        --muted: rgb(56, 56, 56);
+    }
+}
+
+/* Clases de utilidad */
+
+.bg-background {
+    background: var(--background);
+}
+
+.bg-muted {
+    background: var(--muted);
+}
+
+.color-foreground {
+    color: var(--foreground);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-between {
+    align-items: space-between;
+}
+
+.items-around {
+    align-items: space-around;
+}
+
+.items-start {
+    align-items: start;
+}
+
+.items-end {
+    align-items: end;
+}
+
+.grid {
+    display: grid;
+}
