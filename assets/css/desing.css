@@ -20,6 +20,8 @@ ul, ol {
     --background: rgb(198, 198, 198);
     --foreground: rgb(0, 0, 0);
     --muted: rgb(139, 139, 139);
+    --primary: rgb(160, 145, 114);
+    --border: rgb(0, 0, 0);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,6 +29,8 @@ ul, ol {
         --background: rgb(79, 79, 79);
         --foreground: rgb(255, 255, 255);
         --muted: rgb(56, 56, 56);
+        --primary: rgb(160, 145, 114);
+        --border: rgb(0, 0, 0);
     }
 }
 
