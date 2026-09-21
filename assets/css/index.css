@@ -1,4 +1,6 @@
 body {
+    display: grid;
+    background-color: var(--background);
     height: 100vh;
     grid-template-columns: 1.5fr 1fr 1.5fr;
     grid-template-rows: 4rem 1fr;
