@@ -7,10 +7,31 @@
     <link rel="stylesheet" href="assets/css/index.css" />
     <title>App Encantamientos</title>
   </head>
-  <body class="bg-background grid">
-    <header class="app__header"></header>
-    <aside class="enchatments__list"></aside>
-    <main class="app__item"></main>
-    <aside class="enchatments__order"></aside>
+  <body>
+    <div class="app__border">
+      <div class="app">
+        <header class="app__header">
+          <div class="app__header__title">
+            <img
+              src="assets/img/logo.png"
+              alt="Un libro con estilo pixel art"
+            />
+            <h1>Encantamientos</h1>
+          </div>
+          <div class="app__header__version">
+            <div class="app__header__version__selector">
+              <!-- Provisional -->
+              <label for="version__selector">Version:</label>
+              <select id="version__selector">
+                <option value="23.3">23.3</option>
+              </select>
+            </div>
+          </div>
+        </header>
+        <aside class="enchantments__list"></aside>
+        <main class="app__item"></main>
+        <aside class="enchantments__order"></aside>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,11 +1,230 @@
 body {
-    display: grid;
-    background-color: var(--background);
+    background-color: white;
     height: 100vh;
+    padding: 2rem;
+}
+
+.app__border {
+    width: 100%;
+    height: 100%;
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+    display: grid;
     grid-template-columns: 1.5fr 1fr 1.5fr;
-    grid-template-rows: 4rem 1fr;
+    grid-template-rows: calc(4rem + 4px) 1fr;
+    background-color: var(--background);
+}
+
+.app,
+.app__border {
+  clip-path: polygon(0px calc(100% - 20px),
+    4px calc(100% - 20px),
+    4px calc(100% - 12px),
+    8px calc(100% - 12px),
+    8px calc(100% - 8px),
+    12px calc(100% - 8px),
+    12px calc(100% - 4px),
+    20px calc(100% - 4px),
+    20px 100%,
+    calc(100% - 20px) 100%,
+    calc(100% - 20px) calc(100% - 4px),
+    calc(100% - 12px) calc(100% - 4px),
+    calc(100% - 12px) calc(100% - 8px),
+    calc(100% - 8px) calc(100% - 8px),
+    calc(100% - 8px) calc(100% - 12px),
+    calc(100% - 4px) calc(100% - 12px),
+    calc(100% - 4px) calc(100% - 20px),
+    100% calc(100% - 20px),
+    100% 20px,
+    calc(100% - 4px) 20px,
+    calc(100% - 4px) 12px,
+    calc(100% - 8px) 12px,
+    calc(100% - 8px) 8px,
+    calc(100% - 12px) 8px,
+    calc(100% - 12px) 4px,
+    calc(100% - 20px) 4px,
+    calc(100% - 20px) 0px,
+    20px 0px,
+    20px 4px,
+    12px 4px,
+    12px 8px,
+    8px 8px,
+    8px 12px,
+    4px 12px,
+    4px 20px,
+    0px 20px);
+  position: relative;
+}
+.app {
+  border: 4px solid transparent;
+}
+
+.app__border .app {
+  clip-path: polygon(4px 20px,
+    8px 20px,
+    8px 12px,
+    12px 12px,
+    12px 8px,
+    20px 8px,
+    20px 4px,
+    calc(100% - 20px) 4px,
+    calc(100% - 20px) 8px,
+    calc(100% - 12px) 8px,
+    calc(100% - 12px) 12px,
+    calc(100% - 8px) 12px,
+    calc(100% - 8px) 20px,
+    calc(100% - 4px) 20px,
+    calc(100% - 4px) calc(100% - 20px),
+    calc(100% - 8px) calc(100% - 20px),
+    calc(100% - 8px) calc(100% - 12px),
+    calc(100% - 12px) calc(100% - 12px),
+    calc(100% - 12px) calc(100% - 8px),
+    calc(100% - 20px) calc(100% - 8px),
+    calc(100% - 20px) calc(100% - 4px),
+    20px calc(100% - 4px),
+    20px calc(100% - 8px),
+    12px calc(100% - 8px),
+    12px calc(100% - 12px),
+    8px calc(100% - 12px),
+    8px calc(100% - 20px),
+    4px calc(100% - 20px));
+}
+.app::after,
+.app__border::after {
+  content: "";
+  position: absolute;
+  clip-path: polygon(0px calc(100% - 20px),
+    4px calc(100% - 20px),
+    4px calc(100% - 12px),
+    8px calc(100% - 12px),
+    8px calc(100% - 8px),
+    12px calc(100% - 8px),
+    12px calc(100% - 4px),
+    20px calc(100% - 4px),
+    20px 100%,
+    calc(100% - 20px) 100%,
+    calc(100% - 20px) calc(100% - 4px),
+    calc(100% - 12px) calc(100% - 4px),
+    calc(100% - 12px) calc(100% - 8px),
+    calc(100% - 8px) calc(100% - 8px),
+    calc(100% - 8px) calc(100% - 12px),
+    calc(100% - 4px) calc(100% - 12px),
+    calc(100% - 4px) calc(100% - 20px),
+    100% calc(100% - 20px),
+    100% 20px,
+    calc(100% - 4px) 20px,
+    calc(100% - 4px) 12px,
+    calc(100% - 8px) 12px,
+    calc(100% - 8px) 8px,
+    calc(100% - 12px) 8px,
+    calc(100% - 12px) 4px,
+    calc(100% - 20px) 4px,
+    calc(100% - 20px) 0px,
+    20px 0px,
+    20px 4px,
+    12px 4px,
+    12px 8px,
+    8px 8px,
+    8px 12px,
+    4px 12px,
+    4px 20px,
+    0px 20px,
+    0px 50%,
+    4px 50%,
+    4px 20px,
+    8px 20px,
+    8px 12px,
+    12px 12px,
+    12px 8px,
+    20px 8px,
+    20px 4px,
+    calc(100% - 20px) 4px,
+    calc(100% - 20px) 8px,
+    calc(100% - 12px) 8px,
+    calc(100% - 12px) 12px,
+    calc(100% - 8px) 12px,
+    calc(100% - 8px) 20px,
+    calc(100% - 4px) 20px,
+    calc(100% - 4px) calc(100% - 20px),
+    calc(100% - 8px) calc(100% - 20px),
+    calc(100% - 8px) calc(100% - 12px),
+    calc(100% - 12px) calc(100% - 12px),
+    calc(100% - 12px) calc(100% - 8px),
+    calc(100% - 20px) calc(100% - 8px),
+    calc(100% - 20px) calc(100% - 4px),
+    20px calc(100% - 4px),
+    20px calc(100% - 8px),
+    12px calc(100% - 8px),
+    12px calc(100% - 12px),
+    8px calc(100% - 12px),
+    8px calc(100% - 20px),
+    4px calc(100% - 20px),
+    4px 50%,
+    0px 50%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--border);
+  display: block;
+  pointer-events: none;
+}
+.app::after {
+  margin: -4px;
 }
 
 .app__header {
-    grid-area: 1 / 1 / 1 / 4;
+    display: grid;
+    grid-row: 1;
+    grid-column: span 4 / 4;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 4px solid var(--border);
+    padding-inline: 0.5rem;
+}
+
+.app__header__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.app__header__title img {
+    height: 100%;
+    width: auto;
+    aspect-ratio: 1/1;
+    image-rendering: pixelated;
+}
+
+.app__header__title h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.app__header__version {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.enchantments__list {
+    grid-column: 1;
+    grid-row: 2;
+    border-right: 4px solid var(--border);
+}
+
+.app__item {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.enchantments__order {
+    grid-column: 3;
+    grid-row: 2;
+    border-left: 4px solid var(--border);
 }
